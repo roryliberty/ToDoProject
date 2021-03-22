@@ -33,11 +33,16 @@ function sideBar() {
     page.appendChild(side);
 
     const homeBtn = document.createElement('button');
-    homeBtn.id = 'home';
-    const homeSpan = document.createElement('span');
-    homeSpan.textContent = 'Home';
+    homeBtn.id = 'home-btn';
+    const homeSpan = document.createTextNode('Home');
     homeBtn.appendChild(homeSpan);
     side.appendChild(homeBtn);
+
+    const weekBtn = document.createElement('button');
+    weekBtn.id=  'week-btn';
+    const weekSpan = document.createTextNode('This Week');
+    weekBtn.appendChild(weekSpan);
+    side.appendChild(weekBtn);
 }
 
 function mainArea() {
@@ -51,10 +56,22 @@ function mainArea() {
     main.appendChild(test);
 }
 
+function weekArea() {
+    const week = document.createElement('div');
+    week.id = 'week';
+    page.appendChild(week);
+
+    const test = document.createElement('p');
+    test.id = 'test';
+    test.innerText = 'This is working';
+    week.appendChild(test);
+}
+
 function loadPage() {
     topNav();
     sideBar();
     mainArea();
+    weekArea();
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadPage);

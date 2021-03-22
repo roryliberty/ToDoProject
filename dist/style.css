@@ -7,21 +7,30 @@
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    height: 100%;
+    height: 1000px;
 }
 #top {
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: grey;
 }
 
 #side {
-    height: 1000px;
-    width: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 15%;
     left: 0;
     background-color: darkgrey;
 }
 #main {
     background-color: darksalmon;
-    width: 100%;
+    width: 85%;
+}
+#week {
+    background-color: cornflowerblue;
+    width: 85%;
+}
+button {
+    margin: 5px 2px 5px 2px;
 }
