@@ -26,11 +26,27 @@
 #main {
     background-color: darksalmon;
     width: 85%;
+    z-index: 0;
 }
 #week {
+    position: absolute;
+    top: 158px;
+    left: 219px;
+    height: 1000px;
     background-color: cornflowerblue;
     width: 85%;
+    z-index: 1;
 }
 button {
     margin: 5px 2px 5px 2px;
+}
+
+#task-container {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+}
+#submit {
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
